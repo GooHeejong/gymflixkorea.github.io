@@ -1,0 +1,577 @@
+/* 기본 HTML 요소 설정 */
+html {
+    font-size: 15px;
+    /* 기본 글꼴 크기 */
+}
+
+/* 메인 배경 설정 */
+.main-background {
+    width: 100%;
+    height: 1000px;
+    background-color: black;
+    padding: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 로고 이미지 스타일 */
+.logo {
+    width: 60vw;
+    max-width: 1000px;
+    min-width: 150px;
+    height: 100vw;
+    background-image: url("/image/logo.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+    margin-bottom: 100px;
+}
+
+/* 메인 타이틀 스타일 */
+.main-title {
+    color: white;
+    font-size: 4vw;
+    text-align: center;
+    margin-top: 20vw;
+}
+
+.intro {
+    display: grid;
+    margin-top:100px;
+    height: 95%;
+    width: 100%;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas:
+        "a b"
+        "a b"
+        "a b"
+        "c b"
+        "c d"
+        "c d"
+        "c d";
+}
+
+.intro-img1 {
+    grid-area: b;
+}
+
+.intro-img2 {
+    grid-area: c;
+}
+
+.intro-img1 img,
+.intro-img2 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.intro-text1 {
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: a;
+    background-color: gainsboro;
+    color: black;
+    padding : 2px;
+}
+
+
+.intro-text2 li {
+    font-weight: 550;
+    font-size: 120%;
+    margin-bottom: 1.2vw;
+    margin-left: 35%;
+    text-decoration: underline;
+}
+
+.intro-text2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-area: d;
+    background-color: black;
+    color: white;
+}
+
+.intro-text1 p {
+    margin: 0.3vw;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+
+}
+
+nav ul li a {
+    color: white;
+}
+
+
+.brand {
+    display: grid;
+    height: 95%;
+    width: 100%;
+    grid-gap: 10px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "aa bb bb cc cc dd"
+}
+
+.brand-img1 {
+    grid-area: aa;
+}
+
+.brand-img1 {
+    grid-area: aa;
+}
+
+.brand-img2 {
+    grid-area: dd;
+}
+
+.brand-img1 img,
+.brand-img2 img {
+    height: 90%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.brand-text1 {
+    grid-area: bb;
+    height: 90%;
+    width: 100%;
+    background-color: gainsboro;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.brand-text1-orange {
+    font-size : 3vw;
+    font-weight: 700;
+    display: inline-block;
+    color: orangered;
+    margin: 0;
+}
+
+.brand-text1-black {
+    font-size : 3vw;
+    font-weight: 500;
+    display: inline-block;
+    color: black;
+    margin: 0;
+}
+
+.brand-text2 {
+    grid-area: cc;
+    height: 90%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.brand-text2 p {
+    margin: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+
+.page-wrap {
+    width: 100%;
+    display: gird;
+    justify-items: center;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+.content-2 {
+    width: 100%;
+    height: 400px;
+    display: grid;
+    grid-gap: 10px;
+    margin: 10px;
+}
+
+.content-3 {
+    width: 100%;
+    height: 300px;
+    display: grid;
+    grid-gap: 10px;
+    margin: 10px;
+}
+
+.content-4 {
+    width: 100%;
+    height: 300px;
+    display: grid;
+    grid-gap: 10px;
+    margin: 10px;
+}
+
+.content-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.content-2,
+.content-4 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.text-2-b,
+.text-2-w,
+.text-3-w,
+.text-3-b {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-2-b,
+.text-3-b {
+    background-color: gainsboro;
+    color: black;
+}
+
+.text-2-w,
+.text-3-w {
+    background-color: black;
+    color: white;
+}
+
+.text-2-w h2,
+.text-2-b h2,
+.page2-text1 h2,
+.page3-text1 h2 {
+    font-weight: 600;
+    font-size: 3.3vw;
+    margin-bottom: 3vw;
+}
+
+.text-3-w h3,
+.text-3-b h3 {
+    font-size: 2.5vw;
+    margin-bottom: 3vw;
+}
+
+.text-2-w p,
+.text-2-b p,
+.text-3-w p,
+.text-3-b p {
+    font-size: 1.25vw;
+    margin: 1vw;
+}
+
+.img-2,
+.img-3 {
+    display: flex;
+}
+
+.img-2 img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.img-3 img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.img-4 img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.page2 {
+    display: grid;
+    height: 700px;
+    grid-gap: 10px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "aa bb bb cc cc dd"
+}
+
+.page2-img1 {
+    height: 700px;
+    width: 100%;
+    object-fit: cover;
+    grid-area: aa;
+}
+
+.page2-img2 {
+    height: 700px;
+    width: 100%;
+    object-fit: cover;
+    grid-area: dd;
+}
+
+.page2-text1 {
+    grid-area: bb;
+    height: 700px;
+    background-color: gainsboro;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.page2-text1-orange {
+    font-size: 4vw;
+    font-weight: 700;
+    display: inline-block;
+    color: orangered;
+}
+
+.page2-text1-black {
+    font-size: 4vw;
+    font-weight: 500;
+    display: inline-block;
+    color: black;
+    margin: 0;
+}
+
+.page2-text2 {
+    grid-area: cc;
+    height: 700px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.page2-text2 p {
+    margin: 10px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.page2-img1 img,
+.page2-img2 img {
+    height: 700px;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+.galleryText {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+}
+
+.gallery-main-img {
+    display: flex;
+    height: 600px;
+    margin: 5% 10% 5% 10%;
+
+}
+
+.gallery-main-img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.gallery-imglist {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin: 10px 5%;
+    height: 30%;
+  }
+
+.gallery-imglist img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    object-fit: cover;
+  }
+
+
+
+
+
+.gallery-imglist1,
+.gallery-imglist2 {
+    display: grid;
+    align-content: center;
+    height: 100px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 1%;
+}
+
+.gallery-imglist1 img,
+.gallery-imglist2 img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+
+
+.section {
+    height: 100%;
+}
+
+.finish {
+    font-size: 0.6vw;
+    text-align: center;
+    margin-top: 10vw;
+}
+
+
+
+
+@media (max-width : 1200px) {
+    .gallery-main-img {
+        height: 45%;
+        width: 90%;
+        margin: 1% 5%;
+  }
+    .gallery-imglist {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 10px;
+        margin: 10px 5%;
+        height: 30%;
+  }
+    .intro-text1 {
+        font-size: 15px;
+    }
+    .intro-text2 li {
+        margin-left: 20%;
+    }
+    .brand-text1-orange,     .brand-text1-black {
+        font-size: 3vw;
+        margin: 0;
+    }
+    .brand-text2 {
+        font-size : 1.3vw;
+    }
+}
+
+
+
+@media (max-width : 576px) {
+    .intro-text1 {
+        font-size: 10px;
+    }
+    .intro-text1-1 {
+        padding : 10vw;
+    }    
+    .brand {
+        display: grid;
+        height: 95%;
+        width: 100%;
+        grid-gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: "aa bb" "cc dd";
+    }
+    .brand-img1 {
+        grid-area: aa;
+    }
+    .brand-img2 {
+        grid-area: dd;
+    }
+    .brand-text1 {
+        grid-area: bb;
+    }
+    .brand-text2 {
+        grid-area: cc;
+    }
+    .brand-text1-orange,     .brand-text1-black {
+        font-size: 4vw;
+        margin: 0;
+    }
+    .brand-text2 {
+        font-size : 2vw;
+    }
+    .content-2, .content-3, .content-4 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        height: auto;
+    }
+    .text-2-w,
+    .text-2-b,
+    .text-3-b,
+    .text-3-w,
+    .img-2, .img-3 {
+        height: 300px;
+    }
+    .text-2-w h2,
+    .text-2-b h2,
+    .text-3-w h2,
+    .text-3-b h2 {
+        font-size: 8vw;
+    }
+    .text-3-w h3,
+    .text-3-b h3 {
+        font-size: 6vw;
+    }
+    .text-2-w p,
+    .text-2-b p,
+    .text-3-w p,
+    .text-3-b p {
+        font-size: 3vw;
+    }
+    .img-2, .img-3, .img-4 {
+        display:grid;
+        min-height: 300px;
+        max-height: 300px;
+        box-sizing:border-box;
+    }
+    .img-2 img, .img-3 img, .img-4 img {
+        max-height: 300px;
+    }
+    .content-4 .text-3-w, .content-4 .text-3-b {
+        height: 270px;
+    }
+    .gallery-main-img {
+        height: 40%;
+        width: 90%;
+        margin: 1% 5%;
+    }
+    .gallery-imglist {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-gap: 10px;
+        margin: 10px 5%;
+        height: 30%;
+    }
+}
+
+.brand-title {
+    margin-left: 10% !important;
+    margin-bottom: 20%;
+}
