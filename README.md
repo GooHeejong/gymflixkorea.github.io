@@ -1,1 +1,0 @@
-# GYMFLIXkorea.github.io
